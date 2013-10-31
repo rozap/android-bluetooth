@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">bus</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="flash">Flash</string>
+    <string name="motion">Motion</string>
+    <string name="white">White</string>
+    <string name="lock_sliders">Lock Sliders</string>
+    <string name="all_off">All off</string>
+    <string name="unlock_sliders">Unlock Sliders</string>
+    <string name="no_data">-</string>
+</resources>

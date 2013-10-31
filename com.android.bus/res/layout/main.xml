@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rpm_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/rpm_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="RPM"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rpm_label" >
+
+            <TextView
+                android:id="@+id/rpm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minWidth="120dp"
+                android:padding="10dp"
+                android:text="@string/no_data"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <View
+                android:id="@+id/rpm_bar"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/rpm_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rpm_text"
+                android:background="@color/holo_blue_light"
+                android:padding="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cht_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rpm_row"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/cht_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Cyl. Head Temp"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cht_label" >
+
+            <TextView
+                android:id="@+id/cht_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minWidth="120dp"
+                android:padding="10dp"
+                android:text="@string/no_data"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <View
+                android:id="@+id/cht_bar"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/cht_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/cht_text"
+                android:background="@color/holo_blue_light"
+                android:padding="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/battery1_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/cht_row"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/battery1_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Battery Main:"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/battery1_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/battery1_label"
+            android:paddingLeft="10dp"
+            android:text="@string/no_data"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/battery1_label" >
+
+            <TextView
+                android:id="@+id/battery1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minWidth="120dp"
+                android:padding="10dp"
+                android:text="@string/no_data"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <View
+                android:id="@+id/battery1_bar"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/battery1_label"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/battery1_text"
+                android:background="@color/holo_blue_light"
+                android:padding="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/battery2_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/battery1_row"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/battery2_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Battery Aux:"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/battery2_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/battery2_label"
+            android:paddingLeft="10dp"
+            android:text="@string/no_data"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/battery2_label" >
+
+            <TextView
+                android:id="@+id/battery2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minWidth="120dp"
+                android:padding="10dp"
+                android:text="@string/no_data"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <View
+                android:id="@+id/battery2_bar"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/battery2_label"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/battery2_text"
+                android:background="@color/holo_blue_light"
+                android:padding="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/heat_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/battery2_row"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="Heat" />
+
+</RelativeLayout>

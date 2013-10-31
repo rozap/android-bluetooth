@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:text="@string/red">
+    </TextView>
+
+    <SeekBar
+            android:id="@+id/red_seek_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="5dip">
+    </SeekBar>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:text="@string/green">
+    </TextView>
+
+    <SeekBar
+            android:id="@+id/green_seek_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="5dip">
+    </SeekBar>
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:text="@string/blue">
+    </TextView>
+
+    <SeekBar
+            android:id="@+id/blue_seek_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="5dip">
+    </SeekBar>
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:text="@string/white">
+    </TextView>
+
+    <SeekBar
+            android:id="@+id/white_seek_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="5dip">
+    </SeekBar>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random"/>
+        <Button
+                android:id="@+id/individual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Individual"
+                />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:id="@+id/random_wrap"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/random_rate_display"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="50dip"
+                    android:layout_marginTop="5dip"
+
+                    />
+
+            <SeekBar
+                    android:id="@+id/random_rate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/random_rate_display"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="50dip"
+                    android:layout_marginTop="5dip"
+                    android:max="4000" android:indeterminate="false"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:id="@+id/individual_wrap"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/individual_display"
+                    android:layout_width="fill_parent"
+                    android:text="Address: - Value: -"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="50dip"
+                    android:layout_marginTop="5dip"
+
+                    />
+            <SeekBar
+                    android:id="@+id/individual_addr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/individual_display"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="50dip"
+                    android:layout_marginTop="5dip"
+                    android:max="64" android:indeterminate="false"/>
+            <SeekBar
+                    android:id="@+id/individual_level"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/individual_addr"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="50dip"
+                    android:layout_marginTop="5dip"
+                    android:max="127" android:indeterminate="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
